@@ -1,0 +1,40 @@
+<section class="card register">
+
+    <form name="myform" ng-submit="register()" novalidate>
+
+        <div class="text-center">
+            <h1>Form Validation</h1>
+            <p>Please fill out the following form</p>
+            <p ng-show="message">{{ message }}</p>
+        </div>
+
+        <fieldset>
+            <div class="form-group">
+                <input type="text" name="firstname" class="form-control" placeholder="First Name" ng-model="user.firstname" ng-required="true">
+                <p class="error validationerror" ng-show="myform.firstname.$invalid && myform.firstname.$touched">
+                    You must fill out your first name.</p>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="lastname" class="form-control" placeholder="Last Name" ng-model="user.lastname" ng-required="true">
+                <p class="error validationerror" ng-show="myform.lastname.$invalid && myform.lastname.$touched">
+                    You must fill out your last name.</p>
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email" ng-model="user.email">
+                <p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">
+                    This must be a valid email.</p>
+            </div>
+
+
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" ng-model="user.password" ng-minlength="6">
+                <p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">
+                    Password must be at least 6 characters</p>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</section>

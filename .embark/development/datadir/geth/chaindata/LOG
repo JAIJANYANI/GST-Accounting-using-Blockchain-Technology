@@ -1,0 +1,27 @@
+=============== Aug 14, 2017 (IST) ===============
+14:32:48.696649 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:32:48.698938 db@open opening
+14:32:48.700833 version@stat F·[] S·0B[] Sc·[]
+14:32:48.851070 db@janitor F·2 G·0
+14:32:48.851228 db@open done T·152.170128ms
+=============== Aug 14, 2017 (IST) ===============
+14:32:51.667147 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:32:51.668303 version@stat F·[] S·0B[] Sc·[]
+14:32:51.668401 db@open opening
+14:32:51.668780 journal@recovery F·1
+14:32:51.671383 journal@recovery recovering @1
+14:32:51.673916 version@stat F·[] S·0B[] Sc·[]
+14:32:51.677417 db@janitor F·2 G·0
+14:32:51.677528 db@open done T·9.05439ms
+=============== Aug 16, 2017 (IST) ===============
+08:41:36.605125 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:41:36.615657 version@stat F·[] S·0B[] Sc·[]
+08:41:36.615765 db@open opening
+08:41:36.616180 journal@recovery F·1
+08:41:36.619084 journal@recovery recovering @2
+08:41:36.964027 memdb@flush created L0@4 N·21267 S·1MiB "\x00\x00\xae..\x82\x88\x11,v9390":"\xff\xfc\x94..\xa5\x05\xa1,v9519"
+08:41:36.966306 version@stat F·[1] S·1MiB[1MiB] Sc·[0.25]
+08:41:36.971568 db@janitor F·3 G·0
+08:41:36.971701 db@open done T·355.843564ms
+08:41:36.982494 db@close closing
+08:41:36.982891 db@close done T·390.125µs

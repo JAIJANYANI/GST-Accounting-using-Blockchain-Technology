@@ -1,0 +1,23 @@
+{
+  "name": "TiaaCoin",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "embark test"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "embark": "^2.4.1",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-chart.js": "^1.1.1",
+    "angular-chartist.js": "^4.3.1",
+    "chartist": "^0.10.1",
+    "ipfs-api": "^14.0.0",
+    "web3": "^0.18.4"
+  }
+}

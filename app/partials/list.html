@@ -1,0 +1,43 @@
+<section class="artistpage">
+
+    <div class="form-inline">
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="query" placeholder="Search for artists" autofocus />
+        </div>
+        <div class="form-group">
+            By:
+            <select class="form-control" ng-model="artistOrder">
+                <option value="name">Name</option>
+                <option value="reknown">Reknown</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="radio-inline">
+                <input type="radio" ng-model="direction" name="direction" checked> Ascending
+            </label>
+            <label class="radio-inline">
+                <input type="radio" ng-model="direction" name="direction" value="reverse"> Descending
+            </label>
+        </div>
+    </div>
+    <br/>
+    <div ng-show="query">
+        <div class="jumbotron artist" ng-animate="'animate'" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction | limitTo: 5">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#" class="thumbnail">
+                        <img ng-src="assets/images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
+                    </a>
+                    <p>
+                        <a href="#/details/{{artists.indexOf(item)}}" class="btn btn-sm btn-primary" role="button">Details »</a>
+                    </p>
+                </div>
+                <div class="col-md-10">
+                    <h3>{{item.name | uppercase}}</h3>
+                    <p>{{ item.reknown }}</p>
+                    <small>{{item.bio}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

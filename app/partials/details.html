@@ -1,0 +1,20 @@
+<section ng-model="artists">
+    <a href="#/details/{{prevItem}}" class="btn btn-md"> Prev </a>
+    <a href="#/details/{{nextItem}}" class="btn btn-md"> Next </a>
+    <br />
+    <div class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object img-circle" ng-src="assets/images/{{artists[whichItem].shortname}}_tn.jpg" style="width: 140px;height:140px;" alt="Photo of {{artists[whichItem].name}}">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">{{artists[whichItem].name}} <small> India</small></h4>
+            <h5>{{artists[whichItem].reknown}}</h5>
+            <hr style="margin:8px auto">
+
+            <p class="txet-primary">{{artists[whichItem].bio}}</p>
+        </div>
+    </div>
+    <br />
+    <br />
+    <a class="btn btn-lg btn-primary" href="/#list"> Back to search</a>
+</section>
